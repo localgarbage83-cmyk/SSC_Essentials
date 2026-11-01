@@ -1,0 +1,33 @@
+:root{--black:#000;--white:#fff;--hair:rgba(0,0,0,.16);--muted:#555}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--black);font:15px/1.55 "Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
+.bn{font-family:"Tiro Bangla","Plus Jakarta Sans",serif}.mono{font-family:"JetBrains Mono",monospace}
+a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--black);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:calc(14px + env(safe-area-inset-top)) 0 14px;position:sticky;top:0;background:var(--white);z-index:5;border-bottom:1px solid var(--black)}
+.top b{letter-spacing:-.6px}.tag-line{font-size:9px;letter-spacing:.8px}
+h1{font-size:28px;letter-spacing:-1.2px;line-height:1.15;margin:22px 0 6px}h2{font-size:17px;margin:28px 0 10px;letter-spacing:-.4px}h3{margin:0;font-size:15px;line-height:1.35}
+.sub{color:var(--muted);font-size:13px;margin:4px 0}.small{font-size:10px;letter-spacing:.4px}.eyebrow{font-size:10px;letter-spacing:.6px;text-transform:uppercase}
+.crumb{display:inline-block;margin-top:16px;font-size:12px;font-weight:600}.crumb:hover{text-decoration:underline}
+.card,.row{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--hair);border-radius:14px;margin-bottom:9px;transition:border-color .15s}
+a.card:hover,summary:hover{border-color:var(--black)}.card strong{display:block;font-size:14px}.card small{display:block;color:var(--muted);font-size:12px}
+.grow{flex:1;min-width:0}.num{font-weight:700;min-width:26px}.chev{flex:0 0 auto}
+details{border:1px solid var(--black);border-radius:14px;padding:0 12px 4px;margin:18px 0 9px}
+summary{cursor:pointer;padding:14px 2px;font-weight:700;list-style:none;border-radius:10px}summary::-webkit-details-marker{display:none}
+.tag{font:600 10px "JetBrains Mono",monospace;border:1px solid var(--black);border-radius:99px;padding:2px 9px;white-space:nowrap}.tag.off{border-style:dashed;border-color:var(--hair);color:var(--muted)}
+.btn{min-height:44px;padding:0 16px;border:1px solid var(--black);border-radius:12px;background:var(--black);color:var(--white);font:700 12px "Plus Jakarta Sans",sans-serif;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:opacity .15s}
+.btn.ghost{background:var(--white);color:var(--black)}.btn.sm{min-height:34px;padding:0 11px;font-size:11px}.btn:hover:not(:disabled){opacity:.8}.btn:disabled{opacity:.3;cursor:not-allowed}.btn:active:not(:disabled){transform:scale(.98)}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;align-items:center}
+.mcard{border:1px solid var(--hair);border-radius:16px;padding:16px;margin-bottom:12px}.mcard:hover{border-color:var(--black)}
+.mcard-head{display:flex;gap:12px;align-items:flex-start}.mcard-icon{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--black);border-radius:11px;flex:0 0 40px}
+.viewer{margin-top:14px;border:1px solid var(--black);border-radius:14px;padding:10px;overflow:hidden}.viewer canvas{display:block;width:100%;height:auto}
+.viewer-bar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px}
+.empty{padding:26px 16px;border:1px dashed var(--hair);border-radius:14px;text-align:center;color:var(--muted);font-size:13px}
+.note{border-left:3px solid var(--black);padding:8px 12px;font-size:12px;margin:12px 0}.err{border-left:3px solid var(--black);padding-left:10px;font-size:12px;font-weight:600}
+input,select,textarea{min-height:44px;padding:10px 12px;border:1px solid var(--black);border-radius:12px;font:inherit;background:var(--white);width:100%}
+textarea{min-height:76px;resize:vertical}label{display:grid;gap:5px;font-size:12px;font-weight:700;margin-bottom:10px}
+.panel{border:1px solid var(--hair);border-radius:14px;padding:14px;margin:12px 0}.panel.on{border-color:var(--black)}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--black);margin:18px 0 8px}.tab{padding:10px 14px;border:0;background:none;font:700 12px "Plus Jakarta Sans",sans-serif;cursor:pointer;border-radius:10px 10px 0 0}.tab[aria-selected=true]{background:var(--black);color:var(--white)}
+.grid2{display:grid;gap:0 12px;grid-template-columns:1fr}@media(min-width:620px){.grid2{grid-template-columns:1fr 1fr}}
+.log{font:11px/1.6 "JetBrains Mono",monospace}.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:20;display:grid;place-items:start center;overflow:auto;padding:20px}.modal>div{background:var(--white);border-radius:16px;padding:16px;width:100%;max-width:720px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
